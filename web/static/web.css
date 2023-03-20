@@ -1,0 +1,153 @@
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: whitesmoke;
+}
+
+h1 {
+    margin-top: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+h1, h2 {
+   font-family: Verdana, Geneva, sans-serif; 
+}
+
+a {
+    font-family: Verdana, Geneva, sans-serif
+}
+
+p {
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 1.5;
+}
+
+figure {
+    float: left;
+    margin-right: 30px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+img {
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+div {
+    clear: left;
+    padding-bottom: 10px;
+}
+
+ul {
+    width: 65%;
+}
+
+li {
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 1.4;
+}
+
+div.content {
+    width: 65%;
+}
+
+div.highlight {
+    background-color: azure;
+    width: 300px;
+    border: 2px solid blue;
+    border-radius: 8px;
+    float: right;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+nav ul {
+    border: 2px solid blue;
+    border-radius: 8px;
+    list-style-type: none;
+    overflow: hidden;
+    width: 96%;
+}
+
+nav li {
+    float: left;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: blue;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+nav li a:hover {
+    color: white;
+    background-color: blue;
+}
+
+input{
+    width: 75%;
+}
+
+.smallinput{
+    width: 20%;
+}
+
+
+.topnav {
+    display:flex;
+    
+    background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: green;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: green;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+th{
+    cursor: pointer;
+}
+
+tr{
+    padding: 10px, 10px;
+}
+
+tr:nth-child(even){
+    background-color: #bbe9b0; 
+}

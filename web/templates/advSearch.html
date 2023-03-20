@@ -1,0 +1,88 @@
+<html>
+<head>
+	<title>Early European Books</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='web.css') }}">
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="http://perlman.mathcs.carleton.edu:{{ port }}/?">Home</a>
+        <a href="http://perlman.mathcs.carleton.edu:{{ port }}/about?">About</a>
+        <a class="active" href="http://perlman.mathcs.carleton.edu:{{ port }}/advancedSearch?">Advanced Search</a>
+        <a href="http://perlman.mathcs.carleton.edu:{{ port }}/source">Source</a>
+    </div>
+
+<h1>Advanced Search</h1>
+
+<div>
+
+	<h2>Start Your Advanced Search</h2>
+
+    <p style="color:red">{{ error }}</p>
+
+    <form action="/results" method="post"> 
+        <p>Book title:</p>
+        <input type="text" size = 20 name = "title">
+
+        <p>Book author:</p>
+        <input type="text" size = 20 name = "author">
+
+        <p>Book publisher:</p>
+        <input type="text" size = 20 name = "publisher">
+
+        <p>Book topic:</p> 
+        <input type="text" name = "topic">
+
+        <p>Nation of Publication</p>
+        <select id="nation" name="country" size="1">
+            <option value=""></option>
+            <option value="Austria">Austria</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Czech Republic">Czech Republic</option>
+            <option value="Denmark">Denmark</option>
+            <option value="England">England</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Iceland">Iceland</option>
+            <option value="Italy">Italy</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Poland">Poland</option>
+            <option value="Russia">Russia</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Undetermined">Undetermined</option>
+        </select>
+
+        <p>Language of Publication</p>
+        <select id="language" name="language" size="1">
+            <option value=""></option>
+            <option value="Ancient Greek|Greek">Ancient Greek</option>
+            <option value="Danish">Danish</option>
+            <option value="Dutch">Dutch</option>
+            <option value="English">English</option>
+            <option value="German">German</option>
+            <option value="Greek">Greek</option>
+            <option value="Icelandic">Icelandic</option>
+            <option value="Italian">Italian</option>
+            <option value="Latin">Latin</option>
+            <option value="Swedish">Swedish</option>
+        </select>
+
+        <p>Year Interval: Between 1482-1752</p>
+        <div class="smallinput">
+            <label for="Beginning Year">Start Year:</label>
+            <input type="number" name = "startYear" id="input1">
+            <br><br>
+            <label for="Ending Year">End Year:</label>
+            <input type="number" name = "endYear" id="input2">
+        </div>
+        <br>
+
+        <input type="submit" value="Search">
+    </form>
+    
+</div>
+
+</body>
+</html>

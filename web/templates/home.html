@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Early European Books</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='web.css') }}">
+</head>
+
+<body>
+
+<div class="topnav">
+	<a class="active" href="http://perlman.mathcs.carleton.edu:{{ port }}/?">Home</a>
+	<a href="http://perlman.mathcs.carleton.edu:{{ port }}/about?">About</a>
+	<a href="http://perlman.mathcs.carleton.edu:{{ port }}/advancedSearch?">Advanced Search</a>
+	<a href="http://perlman.mathcs.carleton.edu:{{ port }}/source">Source</a>
+</div>
+
+<h1>Early European Books</h1>
+
+<div>
+	<p>
+		Welcome to our website! Find early European books by name. 
+		For more ways to search, see <a href="http://perlman.mathcs.carleton.edu:5114/advancedSearch?">Advanced Search</a>.
+	</p>
+</div>
+
+<div>
+	<h2>Start Your Search</h2>
+	
+	<p> You can search by book title  here. </p>
+	
+	<form action="/results" method="post">
+		<input type="text" name = "title">
+	</form>    
+</div>
+
+<br>
+<hr>
+<br>
+
+<div>
+    <p>
+		<b>About the Dataset:</b>
+        Early European Books provides scholars with new ways of accessing and exploring works printed in Europe between 1482 and 
+		1752, drawing together a diverse array of printed sources, regardless of language, as well as works published further 
+		afield. Developed and produced in close collaboration with scholars, rare book librarians, bibliographers, and other 
+		experts from the library world.
+	</p>
+</div>
+
+
+
+</body>
+</html>
