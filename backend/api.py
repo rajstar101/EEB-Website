@@ -1,7 +1,4 @@
-'''
-Team B's API
-Because B is for Best
-'''
+
 import psycopg2
 import psqlConfig as psql
 

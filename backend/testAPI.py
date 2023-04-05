@@ -1,13 +1,12 @@
 
 import unittest 
-
 from api import *
 
 class APITester(unittest.TestCase):
     
     # sets up the database of books
     def setUp(self):
-        earlyBook = earlyBooksAPI('EarlyEuropeanBooksCollection1.csv')
+        earlyBook = earlyBooksAPI('EarlyEuropeanBooksCollection1Clean.csv')
         return earlyBook
 
     #Tests for SearchYearInterval
