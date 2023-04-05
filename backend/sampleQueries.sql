@@ -3,7 +3,7 @@
 SELECT * FROM earlybooks WHERE DateOfPublication BETWEEN 1619 AND 1669 AND USTCClassification LIKE '%Religious%'; 
 /* List books written in Italian */
 
-SELECT *  FROM earlybooks WHERE languageOfText = 'Italian' AND CountryOfPublication = 'Germany';
+SELECT *  FROM earlybooks WHERE LanguageOfText = 'Italian' AND CountryOfPublication = 'Germany';
 
 /* List books written by Niels Hemmingsen (Note: the double dash used to be a comma,
 we had to change it becuase the csv wasdelimited by semicolons intstead of commas; 
