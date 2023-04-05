@@ -7,6 +7,6 @@ CREATE TABLE earlyBooks (
     DateOfPublication int,
     PublisherPrinter text,
     CountryOfPublication text,
-    languageOfText text,
+    LanguageOfText text,
     USTCClassification text
 );
