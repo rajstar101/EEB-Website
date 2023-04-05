@@ -9,4 +9,4 @@ SELECT *  FROM earlybooks WHERE languageOfText = 'Italian' AND CountryOfPublicat
 we had to change it becuase the csv wasdelimited by semicolons intstead of commas; 
 thus, we had to change commas in the entries for '--', and then semicolons to commas). */
 
-SELECT * FROM earlybooks WHERE Author LIKE '%Hemmingsen-- Niels%' AND languageOfText = 'Latin';
+SELECT * FROM earlybooks WHERE Author LIKE '%Hemmingsen-- Niels%' AND LanguageOfText = 'Latin';
